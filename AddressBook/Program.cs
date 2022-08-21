@@ -9,7 +9,7 @@ namespace AddressBook
             Console.WriteLine("Welcome to Address Book program");
             ///UC1 Create Contacts
             AddressBook addressBook = new AddressBook("Preeti", "Sharma", "xyz", "Ggn", "Haryana", 122001, 1234567890, "acd@gmail.com");
-            addressBook.display();
+            addressBook.Display();
             //UC2 Add contacts
             Console.WriteLine("Enter details to add a new contact");
             Console.WriteLine("Enter First Name");
@@ -31,7 +31,29 @@ namespace AddressBook
 
             AddressBook addressBookAdd = new AddressBook(firstName, lastName, address,
                 city, state, zipCode, phoneNumber, email);
-            addressBookAdd.display();
+            addressBookAdd.Display();
+            //UC3 Edit contact
+            Console.WriteLine();
+            Console.WriteLine("Press 1 for edit");
+            
+            int input = Convert.ToInt32(Console.ReadLine());
+            if (input == null)
+            {
+                Console.WriteLine("Wrong selection");
+            }
+
+            switch (input)
+            {
+                case 1:
+                    ////////to edit
+                    Console.WriteLine();
+                    addressBook.EditContact();
+                    Console.WriteLine();
+                    break;               
+                default:
+                    Console.WriteLine("Wrong selection");
+                    break;
+            }
 
         }
     }
