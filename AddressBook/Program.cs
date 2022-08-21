@@ -29,9 +29,9 @@ namespace AddressBook
             Console.WriteLine("Enter Email");
             string email = Console.ReadLine();
 
-            AddressBook addressBook1 = new AddressBook(firstName, lastName, address,
+            AddressBook addressBookAdd = new AddressBook(firstName, lastName, address,
                 city, state, zipCode, phoneNumber, email);
-            addressBook1.display();
+            addressBookAdd.display();
 
         }
     }
