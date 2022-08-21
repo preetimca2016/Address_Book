@@ -103,6 +103,17 @@ namespace AddressBook
                     Console.WriteLine();
             }
         }
+        public void Delete()
+        {
+            this.FirstName = null;
+            this.LastName = null;
+            this.Address = null;
+            this.City = null;
+            this.State = null;
+            this.ZipCode = 0;
+            this.PhoneNumber = 0;
+            this.Email = null;
+        }
 
     }
 }

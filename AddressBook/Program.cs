@@ -35,7 +35,7 @@ namespace AddressBook
             //UC3 Edit contact
             Console.WriteLine();
             Console.WriteLine("Press 1 for edit");
-            
+            Console.WriteLine("Press 2 for delete");
             int input = Convert.ToInt32(Console.ReadLine());
             if (input == null)
             {
@@ -49,7 +49,10 @@ namespace AddressBook
                     Console.WriteLine();
                     addressBook.EditContact();
                     Console.WriteLine();
-                    break;               
+                    break;
+                case 2:
+                    addressBook.Delete();
+                    break;
                 default:
                     Console.WriteLine("Wrong selection");
                     break;
