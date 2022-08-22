@@ -44,7 +44,6 @@ namespace AddressBook
         }
         public void EditContact()
         {
-            // Console.WriteLine("{0} {1} {2} {3} {4} {5} {6} {7}", FirstName, LastName, Address, City, State, ZipCode, PhoneNumber, Email);
             Console.WriteLine();
             Console.WriteLine("Press 0 to update First Name");
             Console.WriteLine("Press 1 to update Last Name");
@@ -101,6 +100,7 @@ namespace AddressBook
                     Console.WriteLine();
                     Display();
                     Console.WriteLine();
+
             }
         }
 
