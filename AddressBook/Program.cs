@@ -49,7 +49,12 @@ namespace AddressBook
                     Console.WriteLine();
                     addressBook.EditContact();
                     Console.WriteLine();
-                    break;               
+                    break;
+                case 2:
+                    ///// to delete
+                    addressBook.Delete();
+                    break;
+
                 default:
                     Console.WriteLine("Wrong selection");
                     break;
