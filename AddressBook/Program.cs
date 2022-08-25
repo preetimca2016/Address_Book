@@ -45,12 +45,13 @@ namespace AddressBook
             switch (input)
             {
                 case 1:
-                    ////////to edit
+                    //to edit
                     Console.WriteLine();
                     addressBook.EditContact();
                     Console.WriteLine();
                     break;
                 case 2:
+                    //to delete
                     addressBook.Delete();
                     break;
                 default:
